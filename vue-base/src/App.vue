@@ -1,9 +1,7 @@
 <script setup>
-import MyHelloOptions from './components/MyHelloOptions.vue'
-import MyHelloComposition from './components/MyHelloComposition.vue'
+import MyHello from './components/MyHello.vue'
 </script>
 
 <template>
-  <MyHelloOptions />
-  <MyHelloComposition />
+  <h1>Hello world!</h1>
 </template>
