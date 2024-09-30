@@ -1,7 +1,7 @@
 <script setup>
-import MyHello from './components/MyHello.vue'
+import HomePage from './pages/Home.vue'
 </script>
 
 <template>
-  <h1>Hello world!</h1>
+  <HomePage />
 </template>
