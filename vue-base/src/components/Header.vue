@@ -1,8 +1,8 @@
 <template>
   <header class="flex justify-between bg-black px-8 py-2">
-    <div class="">
+    <div class="flex flex-col items-center cursor-pointer text-white">
       <img src="/logo.svg" alt="Logo" class="w-40" />
-      <p class="text-white">Мясной ресторан</p>
+      <p>мясной ресторан</p>
     </div>
 
     <ul class="flex items-center gap-8">
