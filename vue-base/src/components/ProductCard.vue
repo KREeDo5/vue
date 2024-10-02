@@ -1,9 +1,10 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import SafeNetworkImage from './SafeNetworkImage.vue'
 
-defineProps({
+const props = defineProps({
   title: String,
+  weight: String,
   imageUrl: String,
   isFavorite: Boolean
 })
@@ -13,11 +14,15 @@ const isFavorite = ref(false)
 const onClick = () => {
   isFavorite.value = !isFavorite.value
 }
+
+const formattedWeight = computed(() => {
+  return props.weight && props.weight.trim() ? `(${props.weight})` : null
+})
 </script>
 
 <template>
   <div
-    class="flex flex-col relative bg-white border-slate-100 rounded-3xl p-2 cursor-pointer hover:bg-relative-200"
+    class="flex flex-col relative bg-[#303030] rounded-3xl p-2 cursor-pointer hover:bg-relative-200"
   >
     <img
       :src="isFavorite ? '/like-2.svg' : '/like-1.svg'"
@@ -25,7 +30,8 @@ const onClick = () => {
       class="absolute top-6 right-6 z-0"
       @click="onClick"
     />
-    <SafeNetworkImage :url="imageUrl" alt="product" class="rounded-2xl" />
-    <p class="mt-2">{{ title }}</p>
+    <SafeNetworkImage :url="props.imageUrl" alt="product" class="rounded-2xl" />
+    <p class="mt-2 text-white">{{ props.title || 'Без названия' }}</p>
+    <p v-if="formattedWeight" class="text-[12px] text-[#C4C4C4]">{{ formattedWeight }}</p>
   </div>
 </template>
