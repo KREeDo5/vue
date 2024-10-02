@@ -7,10 +7,14 @@
 
     <ul class="flex items-center gap-8">
       <li class="flex gap-2 cursor-pointer">
-        <img src="/bull/vk.png" alt="vk" class="h-6 object-cover" />
+        <a href="https://vk.com/thebullmsk" target="_blank">
+          <img src="/bull/vk.png" alt="vk" class="h-6 object-cover" />
+        </a>
       </li>
       <li class="flex gap-2 cursor-pointer">
-        <img src="/bull/telegram.png" alt="tg" class="h-6 object-cover" />
+        <a href="https://t.me/bullmyaso" target="_blank">
+          <img src="/bull/telegram.png" alt="tg" class="h-6 object-cover" />
+        </a>
       </li>
       <li class="flex gap-2 cursor-pointer text-white hover:text-slate-300">
         <img src="/cart.svg" alt="Cart" class="h-6 object-cover" />
