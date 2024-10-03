@@ -1,6 +1,8 @@
 <script setup>
-import Header from '../components/Header.vue'
+import { onMounted } from 'vue'
 import ProductList from '../components/ProductList.vue'
+
+onMounted(() => {})
 
 const items = [
   {
@@ -55,8 +57,6 @@ const items = [
 </script>
 
 <template>
-  <Header class="fixed top-0 left-0 right-0 z-10" />
-  <!-- <Body /> -->
   <div class="bg-[url(/bull/the-bull.png)] min-h-screen bg-cover bg-no-repeat bg-fixed mt-20">
     <div class="bg-black/[.80] mx-20 py-6 px-20 rounded-3xl">
       <b class="text-[24px] text-white">Меню</b>
@@ -66,5 +66,4 @@ const items = [
       <b class="text-[24px] text-white">Наши рестораны</b>
     </div>
   </div>
-  <!-- <Bottom /> -->
 </template>
