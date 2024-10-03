@@ -1,13 +1,11 @@
 <template>
   <header class="header-padding flex justify-between bg-black">
-    <div class="flex flex-col items-center cursor-pointer text-white">
-      <img src="/logo.svg" alt="Logo" class="w-40" />
-      <p>мясной ресторан</p>
-    </div>
-
-    <RouterLink to="/" class="text-white">Home</RouterLink>
-    <RouterLink to="/favorite" class="text-white">Favorite</RouterLink>
-
+    <RouterLink to="/">
+      <div class="flex flex-col items-center cursor-pointer text-white">
+        <img src="/logo.svg" alt="Logo" class="w-40" />
+        <p>мясной ресторан</p>
+      </div>
+    </RouterLink>
     <ul class="flex items-center gap-8">
       <li class="flex gap-2 cursor-pointer">
         <a href="https://vk.com/thebullmsk" target="_blank">
@@ -23,14 +21,18 @@
         <img src="/cart.svg" alt="Cart" class="h-6 object-cover" />
         <span>999 руб.</span>
       </li>
-      <li class="flex gap-2 cursor-pointer text-white hover:text-slate-300">
-        <img src="/heart.svg" alt="Favorite" class="h-6 object-cover" />
-        <span>Избранное</span>
-      </li>
-      <li class="flex gap-2 cursor-pointer text-white hover:text-slate-300">
-        <img src="/profile.svg" alt="Profile" class="h-6 object-cover" />
-        <span>Профиль</span>
-      </li>
+      <RouterLink to="/favorite">
+        <li class="flex gap-2 cursor-pointer text-white hover:text-slate-300">
+          <img src="/heart.svg" alt="Favorite" class="h-6 object-cover" />
+          <span>Избранное</span>
+        </li>
+      </RouterLink>
+      <RouterLink to="/profile">
+        <li class="flex gap-2 cursor-pointer text-white hover:text-[#C4C4C4]">
+          <img src="/profile.svg" alt="Profile" class="h-6 object-cover" />
+          <span>Профиль</span>
+        </li>
+      </RouterLink>
     </ul>
   </header>
 </template>
