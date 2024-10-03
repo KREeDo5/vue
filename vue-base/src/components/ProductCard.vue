@@ -22,7 +22,7 @@ const formattedWeight = computed(() => {
 
 <template>
   <div
-    class="flex flex-col relative bg-[#303030] rounded-3xl p-2 cursor-pointer hover:bg-relative-200"
+    class="flex flex-col relative bg-[#303030]/80 rounded-3xl p-2 cursor-pointer hover:bg-[#303030]/90"
   >
     <img
       :src="isFavorite ? '/like-2.svg' : '/like-1.svg'"

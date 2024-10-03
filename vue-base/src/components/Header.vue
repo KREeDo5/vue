@@ -17,12 +17,12 @@
           <img src="/bull/telegram.png" alt="tg" class="h-6 object-cover" />
         </a>
       </li>
-      <li class="flex gap-2 cursor-pointer text-white hover:text-slate-300">
+      <li class="flex gap-2 cursor-pointer text-white hover:text-[#C4C4C4]">
         <img src="/cart.svg" alt="Cart" class="h-6 object-cover" />
         <span>999 руб.</span>
       </li>
       <RouterLink to="/favorite">
-        <li class="flex gap-2 cursor-pointer text-white hover:text-slate-300">
+        <li class="flex gap-2 cursor-pointer text-white hover:text-[#C4C4C4]">
           <img src="/heart.svg" alt="Favorite" class="h-6 object-cover" />
           <span>Избранное</span>
         </li>
