@@ -1,9 +1,12 @@
 <template>
-  <header class="flex justify-between bg-black px-8 py-2">
+  <header class="header-padding flex justify-between bg-black">
     <div class="flex flex-col items-center cursor-pointer text-white">
       <img src="/logo.svg" alt="Logo" class="w-40" />
       <p>мясной ресторан</p>
     </div>
+
+    <RouterLink to="/" class="text-white">Home</RouterLink>
+    <RouterLink to="/favorite" class="text-white">Favorite</RouterLink>
 
     <ul class="flex items-center gap-8">
       <li class="flex gap-2 cursor-pointer">
@@ -31,3 +34,9 @@
     </ul>
   </header>
 </template>
+
+<style scoped>
+.header-padding {
+  padding: 8px 16px;
+}
+</style>

@@ -57,7 +57,7 @@ const items = [
 </script>
 
 <template>
-  <div class="bg-[url(/bull/the-bull.png)] min-h-screen bg-cover bg-no-repeat bg-fixed mt-20">
+  <div class="bg-[url(/bull/the-bull.png)] min-h-screen bg-cover bg-no-repeat bg-fixed">
     <div class="bg-black/[.80] mx-20 py-6 px-20 rounded-3xl">
       <b class="text-[24px] text-white">Меню</b>
       <ProductList class="py-4" :items="items" />

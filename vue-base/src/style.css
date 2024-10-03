@@ -4,4 +4,9 @@
 
 body {
   background-color: rgb(26, 26, 26, 1);
+  margin-top: 75px;
+}
+
+header {
+  height: 75px;
 }
