@@ -15,6 +15,5 @@ defineProps({
       :title="item.title"
       :weight="item.weight"
     />
-    <ProductCard imageUrl="/bull/steak-ny.png" title="Стейк NY травяной" :isFavorite="true" />
   </div>
 </template>
